@@ -1,5 +1,5 @@
 {
-  "name": "bob-stores-node",
+  "name": "reviewshops",
   "version": "1.0.0",
   "private": true,
   "engines": {
@@ -10,8 +10,8 @@
   },
   "scripts": {
     "start": "node ./start.js",
-    "startDev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
-    "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
+    "startDev": "concurrently \"npm run watch\" \"npm run assets\" --names \"??,??\" --prefix name",
+    "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"??,??\" --prefix name",
     "watch": "nodemon ./start.js --ignore public/",
     "assets": "webpack -w --display-max-modules 0",
     "sample": "node ./data/load-sample-data.js",

@@ -10,6 +10,7 @@ function loadPlaces(map, lat = 42.1354079, lng = 24.74529039999993) {
     axios.get(`/api/stores/near?lat=${lat}&lng=${lng}`)
         .then(res => {
             const places = res.data;
+            console.log(`Request made: lat-${lat} lng${lng}`);
             //console.log(`${JSON.stringify(places)}`);
             if (!places.length) {
                 alert('no places found!');
@@ -71,4 +72,4 @@ function makeMap(mapDiv) {
     })
 }
 
-export default makeMap;
+export default makeMap;localStorage
