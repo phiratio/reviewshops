@@ -6,7 +6,7 @@ const mapOptions = {
     zoom: 10
 };
 
-function loadPlaces(map, lat = 43.2, lng = -79.8) {
+function loadPlaces(map, lat = 42.1354079, lng = 24.74529039999993) {
     axios.get(`/api/stores/near?lat=${lat}&lng=${lng}`)
         .then(res => {
             const places = res.data;
