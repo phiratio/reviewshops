@@ -28,7 +28,8 @@ require('./models/Review');
 const app = require('./app');
 app.set('port', process.env.PORT || 7777);
 const server = app.listen(app.get('port'), () => {
-    console.log(`${helpers.moment().format('DD/MM/YYYY||hh:mm:ss')} Express running → PORT ${server.address().port}`);
+//const server = app.listen(app.get('port'), 'localhost' () => {  <<< this is for digitalOcean
+    console.log(`${helpers.moment().format('DD/MM/YYYY||hh:mm:ss')} Express running → ${server.address()} on PORT ${server.address().port}`);
 });
 
 
